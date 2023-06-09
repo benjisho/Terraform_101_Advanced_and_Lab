@@ -51,11 +51,11 @@ Each provider module (within `vultr/`, `aws/`, `gcp/`) has its own `main.tf`, `v
 
 Before you begin, ensure that you have the following installed:
 
-1. **Terraform** - Follow the instructions [here](https://learn.hashicorp.com/tutorials/terraform/install-cli) to install Terraform.
-2. **Provider CLIs** - Make sure you have the CLI tools for your respective cloud provider:
-    - **AWS CLI** - Installation instructions [here](https://aws.amazon.com/cli/)
-    - **Google Cloud SDK** - Installation instructions [here](https://cloud.google.com/sdk/docs/install)
-    - **Vultr CLI** - Installation instructions [here](https://www.vultr.com/docs/vultr-cli)
+1. **Terraform**: Follow the instructions [here](https://learn.hashicorp.com/tutorials/terraform/install-cli) for installation.
+2. **Provider CLIs**: Install CLI tools for each cloud provider:
+    - **AWS CLI**: Follow the instructions [here](https://aws.amazon.com/cli/).
+    - **Google Cloud SDK**: Follow the instructions [here](https://cloud.google.com/sdk/docs/install).
+    - **Vultr CLI**: Follow the instructions [here](https://www.vultr.com/docs/vultr-cli).
 
 You also need to have accounts and appropriate permissions on Vultr, AWS, and GCP.
 
