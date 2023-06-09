@@ -4,13 +4,13 @@ This repository contains a set of Terraform configurations that interact with mu
 
 ## 📂 Repository Structure
 
-The repository contains the following directories and files:
+The repository consists of the following directories and files:
 
-- `main.tf`, `variables.tf`, `outputs.tf`: These are the primary configuration files in the root directory.
-- `prod/` and `stage/`: These directories contain the environment-specific configurations and state files.
-- `modules/`: This directory contains modules for each cloud provider (Vultr, AWS, GCP).
+- Root directory: Contains primary configuration files including `main.tf`, `variables.tf`, `outputs.tf`.
+- `prod/` and `stage/`: House environment-specific configurations and state files.
+- `modules/`: Holds modules for each cloud provider - Vultr, AWS, GCP.
 
-Each module directory (`vultr/`, `aws/`, `gcp/`) includes its own `main.tf`, `variables.tf`, and `outputs.tf` to configure resources for that provider.
+Each provider module (within `vultr/`, `aws/`, `gcp/`) has its own `main.tf`, `variables.tf`, and `outputs.tf`, which help configure resources for the respective provider.
 
 ```
 .
