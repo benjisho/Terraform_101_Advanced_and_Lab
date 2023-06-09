@@ -86,6 +86,15 @@ You also need to have accounts and appropriate permissions on Vultr, AWS, and GC
     ```
 
 ## 📚 Further Reading
-For more details on Terraform syntax and features, see the Terraform documentation.
 
-Remember, always securely manage your access keys and other sensitive information. Never expose them in public repositories.
+If you want to delve deeper into Terraform's capabilities and features, below are a few resources to help you explore:
+
+1. **[Terraform Documentation](https://www.terraform.io/docs/index.html)** - The official documentation is a comprehensive resource for understanding Terraform's syntax, commands, and provider integrations. It's a great place to start if you want to understand how to use Terraform effectively.
+
+2. **[Terraform Guides](https://learn.hashicorp.com/terraform)** - These guides provide step-by-step tutorials on how to use Terraform to manage your infrastructure. You can find guides for beginners and experienced users alike.
+
+3. **[Terraform Best Practices](https://www.terraform.io/docs/language/values/locals.html)** - This is a great resource for understanding how to structure and manage your Terraform configurations. It provides insights into best practices for organizing Terraform files, managing remote state, and more.
+
+4. **[Provider Documentation](https://www.terraform.io/docs/providers/index.html)** - Each cloud provider has its own set of resources and configurations. Understanding the specific documentation for your chosen providers (AWS, GCP, Vultr) will help you make the most out of your Terraform configurations.
+
+Always remember to manage your secrets securely. Avoid hardcoding sensitive information like access keys, and never expose them in public repositories. Consider using a service like HashiCorp's Vault for secret management.
