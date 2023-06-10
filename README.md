@@ -2,6 +2,9 @@
 
 This repository contains a set of Terraform configurations that interact with multiple cloud providers (Vultr, AWS, and GCP) to provision and manage resources. It follows best practices for organizing Terraform files and managing state.
 
+## Diagram
+![Diagram Unavailable - Please upload a new one](https://mermaid.ink/img/pako:eNqVVdFumzAU_RXLe02iNXmYxKRJhBLUh6RRzKi0sQcHnAQBNjKmWVX133fdJIC7OGleED7nXp9zry_mFSciZdjBW0mrHQqnMUco_B3jkElJN0KWMf6jsbpZH0JcIN0ncoQRipYeIPDskOAdWKCAKranLy3he2Ng4IkeeK0oT1jdcmQCFJmgaZPkTJ1wxlNDXO8ceMs2y4sA8ArRpOBj0cGrFl6JRjHZd3tw56EFU3sh8y4p8HWWKCvIQD7fZpydMeqRabs5UULSLbtiWnuMmkJ1LhaAfJSPgrGlbdEDEP8bibSPaSGS_OTD1A_RcIhiPKccKEiD5Q_kWpnAykRGNeGsPx1olhU9T3M9OiXN-EhtOqMafKYyo2uI7TOPmoEDgo4b-GoO-Mp37-f-qExbuPWwBLqSomMQWp6VBtyuDqTNAFAhAUqd6gQS-q-YETE9FzFa0yRvKiMw-hAIdrqeHY-rV55Whr22fTViqY9cqo_Y6yNX6yOfrY_cWp8-3VKkTX9y-rTe7tn4YN5nK5qf7YBmInsPNP1o60LrrS-vbzi6r809XKu4e1ncvU1c307bpDL3CKziwWXx4Lr48cW8NH7W7dcfzjReZDwn6qVg6CuqlRQ5c76MWZJ-uxsclsN9lqqdM67-fjfj726MH98YP_lEPB7gkkloYAp_uledD_O6YyWMuwOvKdtQGLcYx_wNQmmjBHnhCXaUbNgAN1UKc3-fUTii0gT9NIOrFzsbWtQAVpT_EqI8rt_-AaFgTZc?type=png)
+
 ## 📂 Repository Structure
 
 The repository consists of the following directories and files:
@@ -46,8 +49,6 @@ Each provider module (within `vultr/`, `aws/`, `gcp/`) has its own `main.tf`, `v
         ├── variables.tf
         └── outputs.tf
 ```
-![Diagram Unavailable - Please upload a new one](https://mermaid.ink/img/pako:eNqVVdFumzAU_RXLe02iNXmYxKRJhBLUh6RRzKi0sQcHnAQBNjKmWVX133fdJIC7OGleED7nXp9zry_mFSciZdjBW0mrHQqnMUco_B3jkElJN0KWMf6jsbpZH0JcIN0ncoQRipYeIPDskOAdWKCAKranLy3he2Ng4IkeeK0oT1jdcmQCFJmgaZPkTJ1wxlNDXO8ceMs2y4sA8ArRpOBj0cGrFl6JRjHZd3tw56EFU3sh8y4p8HWWKCvIQD7fZpydMeqRabs5UULSLbtiWnuMmkJ1LhaAfJSPgrGlbdEDEP8bibSPaSGS_OTD1A_RcIhiPKccKEiD5Q_kWpnAykRGNeGsPx1olhU9T3M9OiXN-EhtOqMafKYyo2uI7TOPmoEDgo4b-GoO-Mp37-f-qExbuPWwBLqSomMQWp6VBtyuDqTNAFAhAUqd6gQS-q-YETE9FzFa0yRvKiMw-hAIdrqeHY-rV55Whr22fTViqY9cqo_Y6yNX6yOfrY_cWp8-3VKkTX9y-rTe7tn4YN5nK5qf7YBmInsPNP1o60LrrS-vbzi6r809XKu4e1ncvU1c307bpDL3CKziwWXx4Lr48cW8NH7W7dcfzjReZDwn6qVg6CuqlRQ5c76MWZJ-uxsclsN9lqqdM67-fjfj726MH98YP_lEPB7gkkloYAp_uledD_O6YyWMuwOvKdtQGLcYx_wNQmmjBHnhCXaUbNgAN1UKc3-fUTii0gT9NIOrFzsbWtQAVpT_EqI8rt_-AaFgTZc?type=png)
-
 ## 📌 Prerequisites
 
 Before you begin, ensure that you have the following installed:
