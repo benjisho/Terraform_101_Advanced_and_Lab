@@ -4,25 +4,25 @@ provider "google" {
   region      = var.gcp_region
 }
 
-resource "google_compute_network" "example" {
-  name                    = "example-network"
+resource "google_compute_network" "gcp_network" {
+  name                    = "gcp-example-network"
   auto_create_subnetworks = "true"
 }
 
-resource "google_compute_router" "example" {
-  name    = "example-router"
-  network = google_compute_network.example.name
+resource "google_compute_router" "gcp_router" {
+  name    = "gcp-example-router"
+  network = google_compute_network.gcp_network.name
   region  = var.gcp_region
 }
 
-resource "google_compute_vpn_gateway" "example" {
-  name    = "example-vpngw"
-  network = google_compute_network.example.self_link
+resource "google_compute_vpn_gateway" "gcp_vpn_gateway" {
+  name    = "gcp-example-vpngw"
+  network = google_compute_network.gcp_network.self_link
   region  = var.gcp_region
 }
 
-resource "google_compute_instance" "example" {
-  name         = "example"
+resource "google_compute_instance" "gcp_instance" {
+  name         = "gcp-example-instance"
   machine_type = "f1-micro"
 
   boot_disk {
@@ -32,11 +32,11 @@ resource "google_compute_instance" "example" {
   }
 
   network_interface {
-    network = google_compute_network.example.name
+    network = google_compute_network.gcp_network.name
   }
 }
 
-resource "google_storage_bucket" "example" {
-  name     = "example-bucket"
+resource "google_storage_bucket" "gcp_storage_bucket" {
+  name     = "gcp-example-bucket"
   location = "US"
 }
